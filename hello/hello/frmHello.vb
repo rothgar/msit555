@@ -16,14 +16,23 @@ Public Class frmHello
         End
     End Sub
 
-    Private Sub btnOK_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnOK.Click
-        If radEnglish.Checked Then
-            txtHello_World.Text = "Hello, world!"
-        ElseIf Me.radFrench.Checked = CBool(1) Then
-            Me.txtHello_World.Text = "Bonjour tout le monde!"
-        ElseIf radItalian.Checked = True Then
-            txtHello_World.Text = "Ciao, mondo!"
-        End If
+    Private Sub radFrench_CheckedChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles radFrench.CheckedChanged
+        Me.txtHello_World.Text = "Bonjour tout le monde!"
     End Sub
 
+    Private Sub radItalian_CheckedChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles radItalian.CheckedChanged
+        Me.txtHello_World.Text = "Ciao, mondo!"
+    End Sub
+
+    Private Sub radEnglish_CheckedChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles radEnglish.CheckedChanged
+        Me.txtHello_World.Text = "Hello, World!"
+    End Sub
+
+    Private Sub radSpanish_CheckedChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles radSpanish.CheckedChanged
+        Me.txtHello_World.Text = "Hola, mundo!"
+    End Sub
+
+    Private Sub radGerman_CheckedChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles radGerman.CheckedChanged
+        Me.txtHello_World.Text = "Hallo, welt!"
+    End Sub
 End Class
