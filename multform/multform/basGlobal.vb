@@ -1,11 +1,11 @@
 ﻿' Module:       basGlobal.vb
-' Author:       Richard A. Eckhart
+' Author:       Justin Garrison
 ' Organization: Azusa Pacific University
 ' Application:  MSIT555 – Graphical User Interfaces, multform programming project
 ' Prepared for: Dr. Richard Eckhart
 ' Description:  Code module for the Multform application
 '
-' Initial Coding:    1-8-2013 - RAE
+' Initial Coding:    2014-09-14 - JLG
 ' Revisions:
 
 Option Explicit On
