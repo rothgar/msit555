@@ -1,11 +1,11 @@
 ﻿' Module:       frmHello.vb
-' Author:       Richard A. Eckhart
+' Author:       Justin Garrison
 ' Organization: Azusa Pacific University
 ' Application:  MSIT555 – Graphical User Interfaces, hello programming project
 ' Prepared for: Dr. Richard Eckhart
 ' Description:  Form module for the Hello World! application
 '
-' Initial Coding:    1-1-2013 - RAE
+' Initial Coding:    2014-09-12 - JLG
 ' Revisions:
 
 Option Explicit On
