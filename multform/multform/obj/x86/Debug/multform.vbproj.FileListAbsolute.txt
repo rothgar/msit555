@@ -1,0 +1,11 @@
+c:\users\rothgar\documents\visual studio 2010\Projects\multform\multform\bin\Debug\multform.exe
+c:\users\rothgar\documents\visual studio 2010\Projects\multform\multform\bin\Debug\multform.pdb
+c:\users\rothgar\documents\visual studio 2010\Projects\multform\multform\bin\Debug\multform.xml
+c:\users\rothgar\documents\visual studio 2010\Projects\multform\multform\obj\x86\Debug\multform.frmMultA.resources
+c:\users\rothgar\documents\visual studio 2010\Projects\multform\multform\obj\x86\Debug\multform.frmMultB.resources
+c:\users\rothgar\documents\visual studio 2010\Projects\multform\multform\obj\x86\Debug\multform.frmMultform.resources
+c:\users\rothgar\documents\visual studio 2010\Projects\multform\multform\obj\x86\Debug\multform.Resources.resources
+c:\users\rothgar\documents\visual studio 2010\Projects\multform\multform\obj\x86\Debug\multform.vbproj.GenerateResource.Cache
+c:\users\rothgar\documents\visual studio 2010\Projects\multform\multform\obj\x86\Debug\multform.exe
+c:\users\rothgar\documents\visual studio 2010\Projects\multform\multform\obj\x86\Debug\multform.xml
+c:\users\rothgar\documents\visual studio 2010\Projects\multform\multform\obj\x86\Debug\multform.pdb
