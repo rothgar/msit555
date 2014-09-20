@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class frmMultform
+Partial Class frmMain
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -22,68 +22,65 @@ Partial Class frmMultform
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.btnFormA = New System.Windows.Forms.Button()
-        Me.btnFormB = New System.Windows.Forms.Button()
+        Me.btnForm1 = New System.Windows.Forms.Button()
+        Me.btnForm2 = New System.Windows.Forms.Button()
         Me.btnExit = New System.Windows.Forms.Button()
-        Me.btnFormC = New System.Windows.Forms.Button()
+        Me.btnFrm3 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
-        'btnFormA
+        'btnForm1
         '
-        Me.btnFormA.Location = New System.Drawing.Point(12, 57)
-        Me.btnFormA.Name = "btnFormA"
-        Me.btnFormA.Size = New System.Drawing.Size(75, 23)
-        Me.btnFormA.TabIndex = 0
-        Me.btnFormA.Text = "Form 1"
-        Me.btnFormA.UseVisualStyleBackColor = True
+        Me.btnForm1.Location = New System.Drawing.Point(12, 57)
+        Me.btnForm1.Name = "btnForm1"
+        Me.btnForm1.Size = New System.Drawing.Size(75, 23)
+        Me.btnForm1.TabIndex = 0
+        Me.btnForm1.Text = "Form 1"
+        Me.btnForm1.UseVisualStyleBackColor = True
         '
-        'btnFormB
+        'btnForm2
         '
-        Me.btnFormB.Location = New System.Drawing.Point(12, 110)
-        Me.btnFormB.Name = "btnFormB"
-        Me.btnFormB.Size = New System.Drawing.Size(75, 23)
-        Me.btnFormB.TabIndex = 1
-        Me.btnFormB.Text = "Form 2"
-        Me.btnFormB.UseVisualStyleBackColor = True
+        Me.btnForm2.Location = New System.Drawing.Point(12, 110)
+        Me.btnForm2.Name = "btnForm2"
+        Me.btnForm2.Size = New System.Drawing.Size(75, 23)
+        Me.btnForm2.TabIndex = 1
+        Me.btnForm2.Text = "Form 2"
+        Me.btnForm2.UseVisualStyleBackColor = True
         '
         'btnExit
         '
-        Me.btnExit.Location = New System.Drawing.Point(12, 207)
+        Me.btnExit.Location = New System.Drawing.Point(12, 213)
         Me.btnExit.Name = "btnExit"
         Me.btnExit.Size = New System.Drawing.Size(75, 23)
         Me.btnExit.TabIndex = 2
         Me.btnExit.Text = "Exit"
         Me.btnExit.UseVisualStyleBackColor = True
         '
-        'btnFormC
+        'btnFrm3
         '
-        Me.btnFormC.Location = New System.Drawing.Point(12, 156)
-        Me.btnFormC.Name = "btnFormC"
-        Me.btnFormC.Size = New System.Drawing.Size(75, 23)
-        Me.btnFormC.TabIndex = 3
-        Me.btnFormC.Text = "Form 3"
-        Me.btnFormC.UseVisualStyleBackColor = True
+        Me.btnFrm3.Location = New System.Drawing.Point(12, 161)
+        Me.btnFrm3.Name = "btnFrm3"
+        Me.btnFrm3.Size = New System.Drawing.Size(75, 23)
+        Me.btnFrm3.TabIndex = 3
+        Me.btnFrm3.Text = "Form 3"
+        Me.btnFrm3.UseVisualStyleBackColor = True
         '
-        'frmMultform
+        'frmMain
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(284, 262)
-        Me.ControlBox = False
-        Me.Controls.Add(Me.btnFormC)
+        Me.Controls.Add(Me.btnFrm3)
         Me.Controls.Add(Me.btnExit)
-        Me.Controls.Add(Me.btnFormB)
-        Me.Controls.Add(Me.btnFormA)
-        Me.MinimizeBox = False
-        Me.Name = "frmMultform"
+        Me.Controls.Add(Me.btnForm2)
+        Me.Controls.Add(Me.btnForm1)
+        Me.Name = "frmMain"
         Me.Text = "Main Form"
-        Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.ResumeLayout(False)
 
     End Sub
-    Friend WithEvents btnFormA As System.Windows.Forms.Button
-    Friend WithEvents btnFormB As System.Windows.Forms.Button
+    Friend WithEvents btnForm1 As System.Windows.Forms.Button
+    Friend WithEvents btnForm2 As System.Windows.Forms.Button
     Friend WithEvents btnExit As System.Windows.Forms.Button
-    Friend WithEvents btnFormC As System.Windows.Forms.Button
+    Friend WithEvents btnFrm3 As System.Windows.Forms.Button
 
 End Class

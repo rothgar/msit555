@@ -73,6 +73,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="basGlobal.vb" />
+    <Compile Include="frmMultC.Designer.vb">
+      <DependentUpon>frmMultC.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMultC.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmMultA.Designer.vb">
       <DependentUpon>frmMultA.vb</DependentUpon>
     </Compile>
@@ -109,6 +115,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="frmMultC.resx">
+      <DependentUpon>frmMultC.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmMultA.resx">
       <DependentUpon>frmMultA.vb</DependentUpon>
     </EmbeddedResource>

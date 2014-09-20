@@ -9,3 +9,4 @@ c:\users\rothgar\documents\visual studio 2010\Projects\multform\multform\obj\x86
 c:\users\rothgar\documents\visual studio 2010\Projects\multform\multform\obj\x86\Debug\multform.exe
 c:\users\rothgar\documents\visual studio 2010\Projects\multform\multform\obj\x86\Debug\multform.xml
 c:\users\rothgar\documents\visual studio 2010\Projects\multform\multform\obj\x86\Debug\multform.pdb
+C:\Users\rothgar\Documents\Visual Studio 2010\Projects\multform\multform\obj\x86\Debug\multform.frmMultC.resources

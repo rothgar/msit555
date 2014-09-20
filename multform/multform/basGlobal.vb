@@ -15,11 +15,13 @@ Module basGlobal
     Public frmMain As frmMultform
     Public frmFormA As frmMultA
     Public frmFormB As frmMultB
+    Public frmFormC As frmMultC
 
     Sub main()
         frmMain = New frmMultform()
         frmFormA = Nothing
         frmFormB = Nothing
+        frmFormC = Nothing
         Application.Run(frmMain)
     End Sub
 
