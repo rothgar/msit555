@@ -1,0 +1,2 @@
+C:\Users\rothgar\Documents\Visual Studio 2010\Projects\mortgage\mortgage\obj\x86\Debug\mortgage.frmMortgage.resources
+C:\Users\rothgar\Documents\Visual Studio 2010\Projects\mortgage\mortgage\obj\x86\Debug\mortgage.vbproj.GenerateResource.Cache
