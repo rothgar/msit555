@@ -1,6 +1,6 @@
 ﻿' Module:       frmMortgage.vb
 
-Option Explicit Off
+Option Explicit On
 
 Public Class frmMortgage
 
@@ -10,9 +10,10 @@ Public Class frmMortgage
         'Use Val function to convert text to values
         'Divide interest rate by 1200 to get monthly interest rate
         '
-        gsngPrincipal = Val(Me.txtAmount.Text)
-        gsngInterestRate = Val(Me.txtRate.Text) / 1200.0
-
+        Dim gsngPrincipal = Val(Me.txtAmount.Text)
+        Dim gsngInterestRate = Val(Me.txtRate.Text) / 1200.0
+        Dim gsngPayment As Decimal
+        'MsgBox(gsngPrincipal * (gsngInterestRate / (1.0 - (gsngInterestRate + 1) ^ -gintYears)))
         '
         'If either amount is 0 or less, display error message,
         'clear input text boxes, and exit procedure to start over.
@@ -29,7 +30,7 @@ Public Class frmMortgage
             '
             'Calculate payment and display it
             '
-            gsngPayment = payment()
+            gsngPayment = (gsngPrincipal * (gsngInterestRate / (1.0 - (gsngInterestRate + 1) ^ -gintYears)))
             Me.txtPayment.Text = Format(gsngPayment, "#####.##")
         End If
     End Sub
@@ -38,6 +39,11 @@ Public Class frmMortgage
         '
         'Clear all text boxes and set focus to Amount text box
         '
+        Me.txtAmount.Clear()
+        Me.txtPayment.Clear()
+        Me.txtRate.Clear()
+
+        Me.ActiveControl = Me.txtAmount
     End Sub
 
     Private Sub btnExit_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles btnExit.Click

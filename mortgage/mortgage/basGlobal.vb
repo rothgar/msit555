@@ -9,6 +9,9 @@ Module basGlobal
     'Module name: basGlobal.vb
     '
     Public Const gintYears As Integer = 30
+    Public gsngPrincipal As Integer
+    Public gsngInterestRate As Decimal
+    Public intTerm As Integer
 
     Sub main()
         Application.Run(frmMortgage)
@@ -22,7 +25,8 @@ Module basGlobal
         'gsngPrincipal = loan principal
         'gsngInterestRate = monthly interest rate
         '
-        Return gsngPrincipal * (gsngInterestRate / (1.0 - (gsngInterestRate + 1) ^ -intTerm))
+        Return (gsngPrincipal * (gsngInterestRate / (1.0 - (gsngInterestRate + 1) ^ -gintYears)))
+        'Return 10000 * (2 / (1.0 - (2 + 1) ^ -30))
     End Function
 
 End Module
