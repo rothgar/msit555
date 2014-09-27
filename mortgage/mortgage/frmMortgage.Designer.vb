@@ -82,7 +82,6 @@ Partial Class frmMortgage
         Me.txtPayment.Name = "txtPayment"
         Me.txtPayment.Size = New System.Drawing.Size(135, 20)
         Me.txtPayment.TabIndex = 4
-        Me.txtPayment.TabStop = False
         '
         'btnCalculate
         '
@@ -117,7 +116,6 @@ Partial Class frmMortgage
         Me.txtTerm.Name = "txtTerm"
         Me.txtTerm.Size = New System.Drawing.Size(135, 20)
         Me.txtTerm.TabIndex = 2
-        Me.txtTerm.TabStop = False
         '
         'lblTerm
         '

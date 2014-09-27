@@ -8,7 +8,7 @@ Module basGlobal
     '
     'Module name: basGlobal.vb
     '
-    Public Const gintYears As Integer = 30
+    Public gintYears As Integer
     Public gsngPrincipal As Integer
     Public gsngInterestRate As Decimal
     Public intTerm As Integer

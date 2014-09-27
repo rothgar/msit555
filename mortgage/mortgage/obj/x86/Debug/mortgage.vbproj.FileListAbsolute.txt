@@ -1,14 +1,9 @@
-<<<<<<< HEAD
-C:\Users\rothgar\Documents\Visual Studio 2010\Projects\mortgage\mortgage\obj\x86\Debug\mortgage.frmMortgage.resources
-C:\Users\rothgar\Documents\Visual Studio 2010\Projects\mortgage\mortgage\obj\x86\Debug\mortgage.vbproj.GenerateResource.Cache
-=======
-c:\users\rothgar\documents\visual studio 2010\Projects\mortgage\mortgage\obj\x86\Debug\mortgage.frmMortgage.resources
-c:\users\rothgar\documents\visual studio 2010\Projects\mortgage\mortgage\obj\x86\Debug\mortgage.Resources.resources
-c:\users\rothgar\documents\visual studio 2010\Projects\mortgage\mortgage\obj\x86\Debug\mortgage.vbproj.GenerateResource.Cache
-C:\Users\rothgar\Documents\Visual Studio 2010\Projects\mortgage\mortgage\bin\Debug\mortgage.exe
-C:\Users\rothgar\Documents\Visual Studio 2010\Projects\mortgage\mortgage\bin\Debug\mortgage.pdb
-C:\Users\rothgar\Documents\Visual Studio 2010\Projects\mortgage\mortgage\bin\Debug\mortgage.xml
 C:\Users\rothgar\Documents\Visual Studio 2010\Projects\mortgage\mortgage\obj\x86\Debug\mortgage.exe
 C:\Users\rothgar\Documents\Visual Studio 2010\Projects\mortgage\mortgage\obj\x86\Debug\mortgage.xml
 C:\Users\rothgar\Documents\Visual Studio 2010\Projects\mortgage\mortgage\obj\x86\Debug\mortgage.pdb
->>>>>>> mortgage
+C:\Users\rothgar\Documents\Visual Studio 2010\Projects\mortgage\mortgage\bin\Debug\mortgage.exe
+C:\Users\rothgar\Documents\Visual Studio 2010\Projects\mortgage\mortgage\bin\Debug\mortgage.pdb
+C:\Users\rothgar\Documents\Visual Studio 2010\Projects\mortgage\mortgage\bin\Debug\mortgage.xml
+C:\Users\rothgar\Documents\Visual Studio 2010\Projects\mortgage\mortgage\obj\x86\Debug\mortgage.frmMortgage.resources
+C:\Users\rothgar\Documents\Visual Studio 2010\Projects\mortgage\mortgage\obj\x86\Debug\mortgage.Resources.resources
+C:\Users\rothgar\Documents\Visual Studio 2010\Projects\mortgage\mortgage\obj\x86\Debug\mortgage.vbproj.GenerateResource.Cache
