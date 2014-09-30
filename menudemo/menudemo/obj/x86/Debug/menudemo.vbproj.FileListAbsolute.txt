@@ -1,0 +1,10 @@
+c:\users\rothgar\documents\visual studio 2010\Projects\menudemo\menudemo\obj\x86\Debug\menudemo.frmDisplay.resources
+c:\users\rothgar\documents\visual studio 2010\Projects\menudemo\menudemo\obj\x86\Debug\menudemo.frmMenudemo.resources
+c:\users\rothgar\documents\visual studio 2010\Projects\menudemo\menudemo\obj\x86\Debug\menudemo.Resources.resources
+c:\users\rothgar\documents\visual studio 2010\Projects\menudemo\menudemo\obj\x86\Debug\menudemo.vbproj.GenerateResource.Cache
+c:\users\rothgar\documents\visual studio 2010\Projects\menudemo\menudemo\bin\Debug\menudemo.exe
+c:\users\rothgar\documents\visual studio 2010\Projects\menudemo\menudemo\bin\Debug\menudemo.pdb
+c:\users\rothgar\documents\visual studio 2010\Projects\menudemo\menudemo\bin\Debug\menudemo.xml
+c:\users\rothgar\documents\visual studio 2010\Projects\menudemo\menudemo\obj\x86\Debug\menudemo.exe
+c:\users\rothgar\documents\visual studio 2010\Projects\menudemo\menudemo\obj\x86\Debug\menudemo.xml
+c:\users\rothgar\documents\visual studio 2010\Projects\menudemo\menudemo\obj\x86\Debug\menudemo.pdb
