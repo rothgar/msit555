@@ -24,8 +24,9 @@ Partial Class frmDisplay
     Private Sub InitializeComponent()
         Me.mnuCloseStrip = New System.Windows.Forms.MenuStrip()
         Me.mnuClose = New System.Windows.Forms.ToolStripMenuItem()
-        Me.txtFileName = New System.Windows.Forms.TextBox()
         Me.ToolStripMenuItem1 = New System.Windows.Forms.ToolStripSeparator()
+        Me.txtFileName = New System.Windows.Forms.TextBox()
+        Me.dlgSave = New System.Windows.Forms.SaveFileDialog()
         Me.mnuCloseStrip.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -45,6 +46,11 @@ Partial Class frmDisplay
         Me.mnuClose.Size = New System.Drawing.Size(48, 20)
         Me.mnuClose.Text = "&Close"
         '
+        'ToolStripMenuItem1
+        '
+        Me.ToolStripMenuItem1.Name = "ToolStripMenuItem1"
+        Me.ToolStripMenuItem1.Size = New System.Drawing.Size(149, 6)
+        '
         'txtFileName
         '
         Me.txtFileName.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
@@ -55,11 +61,6 @@ Partial Class frmDisplay
         Me.txtFileName.Name = "txtFileName"
         Me.txtFileName.Size = New System.Drawing.Size(284, 230)
         Me.txtFileName.TabIndex = 1
-        '
-        'ToolStripMenuItem1
-        '
-        Me.ToolStripMenuItem1.Name = "ToolStripMenuItem1"
-        Me.ToolStripMenuItem1.Size = New System.Drawing.Size(149, 6)
         '
         'frmDisplay
         '
@@ -83,4 +84,5 @@ Partial Class frmDisplay
     Friend WithEvents txtFileName As System.Windows.Forms.TextBox
     Friend WithEvents mnuClose As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ToolStripMenuItem1 As System.Windows.Forms.ToolStripSeparator
+    Friend WithEvents dlgSave As System.Windows.Forms.SaveFileDialog
 End Class

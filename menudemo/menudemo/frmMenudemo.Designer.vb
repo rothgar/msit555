@@ -23,13 +23,14 @@ Partial Class frmMenudemo
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.mnuMainMenu = New System.Windows.Forms.MenuStrip()
-        Me.dlgOpenFile = New System.Windows.Forms.OpenFileDialog()
         Me.mnuFile = New System.Windows.Forms.ToolStripMenuItem()
         Me.mnuFile_Open = New System.Windows.Forms.ToolStripMenuItem()
         Me.mnuFile_S1 = New System.Windows.Forms.ToolStripSeparator()
-        Me.mnuFile_FileNameList = New System.Windows.Forms.ToolStripMenuItem()
+        Me.mnuFile_SaveAs = New System.Windows.Forms.ToolStripMenuItem()
         Me.mnuFile_S2 = New System.Windows.Forms.ToolStripSeparator()
         Me.mnuFile_Exit = New System.Windows.Forms.ToolStripMenuItem()
+        Me.dlgOpenFile = New System.Windows.Forms.OpenFileDialog()
+        Me.dlgSaveAs = New System.Windows.Forms.SaveFileDialog()
         Me.mnuMainMenu.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -42,13 +43,9 @@ Partial Class frmMenudemo
         Me.mnuMainMenu.TabIndex = 1
         Me.mnuMainMenu.Text = "Main Menu"
         '
-        'dlgOpenFile
-        '
-        Me.dlgOpenFile.FileName = "dlgOpenFile"
-        '
         'mnuFile
         '
-        Me.mnuFile.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.mnuFile_Open, Me.mnuFile_S1, Me.mnuFile_FileNameList, Me.mnuFile_S2, Me.mnuFile_Exit})
+        Me.mnuFile.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.mnuFile_Open, Me.mnuFile_S1, Me.mnuFile_SaveAs, Me.mnuFile_S2, Me.mnuFile_Exit})
         Me.mnuFile.Name = "mnuFile"
         Me.mnuFile.Size = New System.Drawing.Size(37, 20)
         Me.mnuFile.Text = "&File"
@@ -64,11 +61,11 @@ Partial Class frmMenudemo
         Me.mnuFile_S1.Name = "mnuFile_S1"
         Me.mnuFile_S1.Size = New System.Drawing.Size(149, 6)
         '
-        'mnuFile_FileNameList
+        'mnuFile_SaveAs
         '
-        Me.mnuFile_FileNameList.Name = "mnuFile_FileNameList"
-        Me.mnuFile_FileNameList.Size = New System.Drawing.Size(152, 22)
-        Me.mnuFile_FileNameList.Text = "File Name List"
+        Me.mnuFile_SaveAs.Name = "mnuFile_SaveAs"
+        Me.mnuFile_SaveAs.Size = New System.Drawing.Size(152, 22)
+        Me.mnuFile_SaveAs.Text = "Save As"
         '
         'mnuFile_S2
         '
@@ -80,6 +77,10 @@ Partial Class frmMenudemo
         Me.mnuFile_Exit.Name = "mnuFile_Exit"
         Me.mnuFile_Exit.Size = New System.Drawing.Size(152, 22)
         Me.mnuFile_Exit.Text = "E&xit"
+        '
+        'dlgOpenFile
+        '
+        Me.dlgOpenFile.FileName = "dlgOpenFile"
         '
         'frmMenudemo
         '
@@ -104,9 +105,10 @@ Partial Class frmMenudemo
     Friend WithEvents mnuFile As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents mnuFile_Open As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents mnuFile_S1 As System.Windows.Forms.ToolStripSeparator
-    Friend WithEvents mnuFile_FileNameList As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents mnuFile_S2 As System.Windows.Forms.ToolStripSeparator
     Friend WithEvents mnuFile_Exit As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents dlgOpenFile As System.Windows.Forms.OpenFileDialog
+    Friend WithEvents mnuFile_SaveAs As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents dlgSaveAs As System.Windows.Forms.SaveFileDialog
 
 End Class

@@ -25,7 +25,7 @@ Public Class frmMenudemo
         Dim intTemp As Integer
         intTemp = mnuFile.DropDownItems.IndexOf(mnuFile_Open)
         'Set the OpenFileDialog box filter
-        Me.dlgOpenFile.Filter = "All files (*.*)|*.*|Text Files (*.txt)|*.txt"
+        Me.dlgOpenFile.Filter = "VB module files only (*.VB)|*.vb|VB resource files only (*.RESX)|*.resx|VB solution files only (*.SLN)|*.sln|Executable files only (*.EXE)|*exe|All files (*.*)|*.*"
 
         'Setup the code for handling the "Cancel" button on the OpenFileDialog box
         Dim DialogStatus As Integer
@@ -51,6 +51,52 @@ Public Class frmMenudemo
                 strTemp = strTemp & DialogStatus
                 MsgBox(strTemp, 0, "Open Dialog")
         End Select
+
+    End Sub
+
+    Private Sub mnuFile_SaveAs_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles mnuFile_SaveAs.Click
+
+        If Trim(gstrFileName) <> "" Then
+            'Setup the code for handling the "Cancel" button on the SaveAsDialog box
+            Dim DialogStatus As Integer
+            Me.dlgSaveAs.FileName = gstrFileName
+            DialogStatus = Me.dlgSaveAs.ShowDialog
+
+            'Show the OpenFileDialog box
+            Select Case DialogStatus
+                Case DialogResult.Cancel
+
+                    'Return message if "Cancel" button is pushed
+
+                Case DialogResult.OK
+
+                    'Check the filename specified in the dialogbox
+                    strTemp = Me.dlgSaveAs.FileName
+                    If Trim(strTemp) <> Trim(gstrFileName) Then
+                        gstrFileName = Me.dlgSaveAs.FileName
+
+                        'Add the filename to the menu list
+
+                    End If
+                    'Set the filename selected from the dialogbox
+                    gstrFileName = Me.dlgSaveAs.FileName
+
+                    'Add the filename
+                    Call AddFileName()
+                Case Else
+
+                    'Return message if there is some sort of other error in the dialogbox
+                    strTemp = ""
+                    strTemp = strTemp & DialogStatus
+                    MsgBox(strTemp, 0, "Save As... Dialog")
+            End Select
+
+        Else
+
+            'No current file named to Save As...
+            MsgBox("No current file name to Save As...", 0, "Save As...")
+
+        End If
 
     End Sub
 

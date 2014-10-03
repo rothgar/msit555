@@ -18,4 +18,7 @@ Public Class frmDisplay
 
     End Sub
 
+    Private Sub SaveFileDialog2_FileOk(ByVal sender As System.Object, ByVal e As System.ComponentModel.CancelEventArgs)
+
+    End Sub
 End Class
