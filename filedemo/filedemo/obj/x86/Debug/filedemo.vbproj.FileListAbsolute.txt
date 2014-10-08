@@ -1,0 +1,6 @@
+c:\users\rothgar\documents\visual studio 2010\Projects\filedemo\filedemo\obj\x86\Debug\filedemo.btnPrevious.resources
+c:\users\rothgar\documents\visual studio 2010\Projects\filedemo\filedemo\obj\x86\Debug\filedemo.frmFiledemo.resources
+c:\users\rothgar\documents\visual studio 2010\Projects\filedemo\filedemo\obj\x86\Debug\filedemo.Resources.resources
+c:\users\rothgar\documents\visual studio 2010\Projects\filedemo\filedemo\obj\x86\Debug\filedemo.vbproj.GenerateResource.Cache
+c:\users\rothgar\documents\visual studio 2010\Projects\filedemo\filedemo\obj\x86\Debug\filedemo.frmAddress.resources
+c:\users\rothgar\documents\visual studio 2010\Projects\filedemo\filedemo\obj\x86\Debug\filedemo.frmEditWindow.resources
