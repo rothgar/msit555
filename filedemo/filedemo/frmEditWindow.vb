@@ -4,7 +4,7 @@ Option Explicit On
 
 Public Class frmEditWindow
 
-    Private Sub mnuEditWindow_Close_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles mnuEditWindow_Close.Click
+    Private Sub mnuEditWindow_Close1_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles mnuEditWindow1_Close.Click
         '
         'Close the window
         '

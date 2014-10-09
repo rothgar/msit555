@@ -1,6 +1,4 @@
-﻿
-
-' Module:       frmAddress.vb
+﻿' Module:       frmAddress.vb
 
 Option Explicit On
 
@@ -32,7 +30,7 @@ Public Class btnPrevious
 
     End Sub
 
-    Private Sub btnPrevious_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles btnPrevious.Click
+    Private Sub btnPrevious_Click(ByVal sender As Object, ByVal e As System.EventArgs)
         '
         'Move to the previous record, if any
         '

@@ -23,6 +23,7 @@ Partial Class btnPrevious
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.mnuAdress = New System.Windows.Forms.MenuStrip()
+        Me.mnuAddressClose = New System.Windows.Forms.ToolStripMenuItem()
         Me.lblFname = New System.Windows.Forms.Label()
         Me.lblLname = New System.Windows.Forms.Label()
         Me.lblAddress = New System.Windows.Forms.Label()
@@ -39,7 +40,6 @@ Partial Class btnPrevious
         Me.txtCity = New System.Windows.Forms.TextBox()
         Me.txtState = New System.Windows.Forms.TextBox()
         Me.txtZip = New System.Windows.Forms.TextBox()
-        Me.mnuAddressClose = New System.Windows.Forms.ToolStripMenuItem()
         Me.mnuAdress.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -51,6 +51,12 @@ Partial Class btnPrevious
         Me.mnuAdress.Size = New System.Drawing.Size(564, 24)
         Me.mnuAdress.TabIndex = 0
         Me.mnuAdress.Text = "MenuStrip1"
+        '
+        'mnuAddressClose
+        '
+        Me.mnuAddressClose.Name = "mnuAddressClose"
+        Me.mnuAddressClose.Size = New System.Drawing.Size(48, 20)
+        Me.mnuAddressClose.Text = "&Close"
         '
         'lblFname
         '
@@ -183,12 +189,6 @@ Partial Class btnPrevious
         Me.txtZip.Name = "txtZip"
         Me.txtZip.Size = New System.Drawing.Size(271, 20)
         Me.txtZip.TabIndex = 5
-        '
-        'mnuAddressClose
-        '
-        Me.mnuAddressClose.Name = "mnuAddressClose"
-        Me.mnuAddressClose.Size = New System.Drawing.Size(48, 20)
-        Me.mnuAddressClose.Text = "&Close"
         '
         'btnPrevious
         '

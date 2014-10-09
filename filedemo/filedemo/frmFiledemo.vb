@@ -38,7 +38,7 @@ Public Class frmFiledemo
                     FileClose(1)
                     EditWindow = New frmEditWindow
                     EditWindow.MdiParent = Me
-                    EditWindow.txtEdit.Text = strTxt
+                    EditWindow.txtEdit1.Text = strTxt
                     EditWindow.Text = gstrUserFileName
                     EditWindow.Show()
                 End If
@@ -147,6 +147,10 @@ Public Class frmFiledemo
 
     End Sub
 
+    Private Sub mnuFile_Exit_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles mnuFile_Exit.Click
+        Me.Close()
+
+    End Sub
 End Class
 
 
