@@ -23,13 +23,13 @@ Partial Class frmFiledemo
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.mnuMainMenu = New System.Windows.Forms.MenuStrip()
-        Me.dlgOpenFile = New System.Windows.Forms.OpenFileDialog()
         Me.mnuFile = New System.Windows.Forms.ToolStripMenuItem()
         Me.mnuFile_Sequential = New System.Windows.Forms.ToolStripMenuItem()
         Me.mnuFile_Random = New System.Windows.Forms.ToolStripMenuItem()
         Me.mnuFile_Binary = New System.Windows.Forms.ToolStripMenuItem()
         Me.mnuFile_S1 = New System.Windows.Forms.ToolStripSeparator()
         Me.mnuFile_Exit = New System.Windows.Forms.ToolStripMenuItem()
+        Me.dlgOpenFile = New System.Windows.Forms.OpenFileDialog()
         Me.mnuMainMenu.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -41,11 +41,6 @@ Partial Class frmFiledemo
         Me.mnuMainMenu.Size = New System.Drawing.Size(284, 24)
         Me.mnuMainMenu.TabIndex = 1
         Me.mnuMainMenu.Text = "Main Menu"
-        '
-        'dlgOpenFile
-        '
-        Me.dlgOpenFile.FileName = "OpenFileDialog1"
-        Me.dlgOpenFile.Title = "Open File Dialog"
         '
         'mnuFile
         '
@@ -82,6 +77,11 @@ Partial Class frmFiledemo
         Me.mnuFile_Exit.Name = "mnuFile_Exit"
         Me.mnuFile_Exit.Size = New System.Drawing.Size(152, 22)
         Me.mnuFile_Exit.Text = "E&xit"
+        '
+        'dlgOpenFile
+        '
+        Me.dlgOpenFile.FileName = "OpenFileDialog1"
+        Me.dlgOpenFile.Title = "Open File Dialog"
         '
         'frmFiledemo
         '

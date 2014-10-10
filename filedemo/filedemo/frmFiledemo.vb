@@ -147,4 +147,8 @@ Public Class frmFiledemo
 
     End Sub
 
+    Private Sub mnuFile_Exit_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles mnuFile_Exit.Click
+        Me.Close()
+
+    End Sub
 End Class
