@@ -39,11 +39,13 @@ Partial Class frmEditWindow
         '
         'txtEdit
         '
-        Me.txtEdit.Location = New System.Drawing.Point(13, 28)
+        Me.txtEdit.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.txtEdit.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.txtEdit.Location = New System.Drawing.Point(0, 24)
         Me.txtEdit.Multiline = True
         Me.txtEdit.Name = "txtEdit"
         Me.txtEdit.ScrollBars = System.Windows.Forms.ScrollBars.Both
-        Me.txtEdit.Size = New System.Drawing.Size(259, 222)
+        Me.txtEdit.Size = New System.Drawing.Size(284, 238)
         Me.txtEdit.TabIndex = 1
         '
         'mnuEditWindow_Close
@@ -61,7 +63,7 @@ Partial Class frmEditWindow
         Me.Controls.Add(Me.mnuEditWindow)
         Me.MainMenuStrip = Me.mnuEditWindow
         Me.Name = "frmEditWindow"
-        Me.Text = "frmEditWindow"
+        Me.Text = "Edit Window"
         Me.mnuEditWindow.ResumeLayout(False)
         Me.mnuEditWindow.PerformLayout()
         Me.ResumeLayout(False)
@@ -69,6 +71,6 @@ Partial Class frmEditWindow
 
     End Sub
     Friend WithEvents mnuEditWindow As System.Windows.Forms.MenuStrip
-    Friend WithEvents mnuEditWindow_Close As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents txtEdit As System.Windows.Forms.TextBox
+    Friend WithEvents mnuEditWindow_Close As System.Windows.Forms.ToolStripMenuItem
 End Class

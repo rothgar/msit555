@@ -1,0 +1,11 @@
+c:\users\rothgar\documents\visual studio 2010\Projects\filedemo\filedemo\bin\Debug\filedemo.exe
+c:\users\rothgar\documents\visual studio 2010\Projects\filedemo\filedemo\bin\Debug\filedemo.pdb
+c:\users\rothgar\documents\visual studio 2010\Projects\filedemo\filedemo\bin\Debug\filedemo.xml
+c:\users\rothgar\documents\visual studio 2010\Projects\filedemo\filedemo\obj\x86\Debug\filedemo.frmAddress.resources
+c:\users\rothgar\documents\visual studio 2010\Projects\filedemo\filedemo\obj\x86\Debug\filedemo.frmEditWindow.resources
+c:\users\rothgar\documents\visual studio 2010\Projects\filedemo\filedemo\obj\x86\Debug\filedemo.frmFiledemo.resources
+c:\users\rothgar\documents\visual studio 2010\Projects\filedemo\filedemo\obj\x86\Debug\filedemo.Resources.resources
+c:\users\rothgar\documents\visual studio 2010\Projects\filedemo\filedemo\obj\x86\Debug\filedemo.vbproj.GenerateResource.Cache
+c:\users\rothgar\documents\visual studio 2010\Projects\filedemo\filedemo\obj\x86\Debug\filedemo.exe
+c:\users\rothgar\documents\visual studio 2010\Projects\filedemo\filedemo\obj\x86\Debug\filedemo.xml
+c:\users\rothgar\documents\visual studio 2010\Projects\filedemo\filedemo\obj\x86\Debug\filedemo.pdb

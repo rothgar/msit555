@@ -6,7 +6,7 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{E155E7B1-528B-4F01-AC46-6DE0C1A604DC}</ProjectGuid>
+    <ProjectGuid>{5DE42F78-5EEC-4D69-B8F3-7CA2E3C5CC0B}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <StartupObject>filedemo.My.MyApplication</StartupObject>
     <RootNamespace>filedemo</RootNamespace>
@@ -88,7 +88,7 @@
     <Compile Include="frmFiledemo.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.vb">
+    <Compile Include="frmFiledemo.Designer.vb">
       <DependentUpon>frmFiledemo.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
