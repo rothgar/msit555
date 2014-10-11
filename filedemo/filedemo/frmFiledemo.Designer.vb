@@ -30,6 +30,7 @@ Partial Class frmFiledemo
         Me.mnuFile_S1 = New System.Windows.Forms.ToolStripSeparator()
         Me.mnuFile_Exit = New System.Windows.Forms.ToolStripMenuItem()
         Me.dlgOpenFile = New System.Windows.Forms.OpenFileDialog()
+        Me.dlgSaveAs_File = New System.Windows.Forms.SaveFileDialog()
         Me.mnuMainMenu.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -52,30 +53,30 @@ Partial Class frmFiledemo
         'mnuFile_Sequential
         '
         Me.mnuFile_Sequential.Name = "mnuFile_Sequential"
-        Me.mnuFile_Sequential.Size = New System.Drawing.Size(152, 22)
+        Me.mnuFile_Sequential.Size = New System.Drawing.Size(129, 22)
         Me.mnuFile_Sequential.Text = "&Sequential"
         '
         'mnuFile_Random
         '
         Me.mnuFile_Random.Name = "mnuFile_Random"
-        Me.mnuFile_Random.Size = New System.Drawing.Size(152, 22)
+        Me.mnuFile_Random.Size = New System.Drawing.Size(129, 22)
         Me.mnuFile_Random.Text = "&Random"
         '
         'mnuFile_Binary
         '
         Me.mnuFile_Binary.Name = "mnuFile_Binary"
-        Me.mnuFile_Binary.Size = New System.Drawing.Size(152, 22)
+        Me.mnuFile_Binary.Size = New System.Drawing.Size(129, 22)
         Me.mnuFile_Binary.Text = "&Binary"
         '
         'mnuFile_S1
         '
         Me.mnuFile_S1.Name = "mnuFile_S1"
-        Me.mnuFile_S1.Size = New System.Drawing.Size(149, 6)
+        Me.mnuFile_S1.Size = New System.Drawing.Size(126, 6)
         '
         'mnuFile_Exit
         '
         Me.mnuFile_Exit.Name = "mnuFile_Exit"
-        Me.mnuFile_Exit.Size = New System.Drawing.Size(152, 22)
+        Me.mnuFile_Exit.Size = New System.Drawing.Size(129, 22)
         Me.mnuFile_Exit.Text = "E&xit"
         '
         'dlgOpenFile
@@ -108,5 +109,6 @@ Partial Class frmFiledemo
     Friend WithEvents mnuFile_S1 As System.Windows.Forms.ToolStripSeparator
     Friend WithEvents mnuFile_Exit As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents dlgOpenFile As System.Windows.Forms.OpenFileDialog
+    Friend WithEvents dlgSaveAs_File As System.Windows.Forms.SaveFileDialog
 
 End Class

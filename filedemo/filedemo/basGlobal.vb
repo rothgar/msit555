@@ -1,11 +1,11 @@
 ﻿' Module:       basGlobal.vb
-' Author:       Richard A. Eckhart
+' Author:       Justin Garrison
 ' Organization: Azusa Pacific University
 ' Application:  MSIT555 – Graphical User Interfaces, filedemo programming project
 ' Prepared for: Dr. Richard Eckhart
 ' Description:  Code module for the Filedemo application
 '
-' Initial Coding:    1-16-2013 - RAE
+' Initial Coding:    2014-10-05
 ' Revisions:
 
 Option Explicit On
@@ -19,6 +19,9 @@ Module basGlobal
     Public EditWindow As frmEditWindow
     Public Address As frmAddress
     Public gstrUserFileName As String
+    Public gstrFileName As String
+    Public strTemp As String
+
 
     'Structure of random file access demo records
     Structure gusrAddress

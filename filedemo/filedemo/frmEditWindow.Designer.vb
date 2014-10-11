@@ -23,19 +23,33 @@ Partial Class frmEditWindow
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.mnuEditWindow = New System.Windows.Forms.MenuStrip()
-        Me.txtEdit = New System.Windows.Forms.TextBox()
         Me.mnuEditWindow_Close = New System.Windows.Forms.ToolStripMenuItem()
+        Me.mnuEditWindow_SaveAs = New System.Windows.Forms.ToolStripMenuItem()
+        Me.txtEdit = New System.Windows.Forms.TextBox()
+        Me.dlgSaveAs_Edit = New System.Windows.Forms.SaveFileDialog()
         Me.mnuEditWindow.SuspendLayout()
         Me.SuspendLayout()
         '
         'mnuEditWindow
         '
-        Me.mnuEditWindow.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.mnuEditWindow_Close})
+        Me.mnuEditWindow.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.mnuEditWindow_Close, Me.mnuEditWindow_SaveAs})
         Me.mnuEditWindow.Location = New System.Drawing.Point(0, 0)
         Me.mnuEditWindow.Name = "mnuEditWindow"
         Me.mnuEditWindow.Size = New System.Drawing.Size(284, 24)
         Me.mnuEditWindow.TabIndex = 0
         Me.mnuEditWindow.Text = "Edit Window Menu"
+        '
+        'mnuEditWindow_Close
+        '
+        Me.mnuEditWindow_Close.Name = "mnuEditWindow_Close"
+        Me.mnuEditWindow_Close.Size = New System.Drawing.Size(48, 20)
+        Me.mnuEditWindow_Close.Text = "&Close"
+        '
+        'mnuEditWindow_SaveAs
+        '
+        Me.mnuEditWindow_SaveAs.Name = "mnuEditWindow_SaveAs"
+        Me.mnuEditWindow_SaveAs.Size = New System.Drawing.Size(59, 20)
+        Me.mnuEditWindow_SaveAs.Text = "Save &As"
         '
         'txtEdit
         '
@@ -47,12 +61,6 @@ Partial Class frmEditWindow
         Me.txtEdit.ScrollBars = System.Windows.Forms.ScrollBars.Both
         Me.txtEdit.Size = New System.Drawing.Size(284, 238)
         Me.txtEdit.TabIndex = 1
-        '
-        'mnuEditWindow_Close
-        '
-        Me.mnuEditWindow_Close.Name = "mnuEditWindow_Close"
-        Me.mnuEditWindow_Close.Size = New System.Drawing.Size(48, 20)
-        Me.mnuEditWindow_Close.Text = "&Close"
         '
         'frmEditWindow
         '
@@ -73,4 +81,6 @@ Partial Class frmEditWindow
     Friend WithEvents mnuEditWindow As System.Windows.Forms.MenuStrip
     Friend WithEvents txtEdit As System.Windows.Forms.TextBox
     Friend WithEvents mnuEditWindow_Close As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents dlgSaveAs_Edit As System.Windows.Forms.SaveFileDialog
+    Friend WithEvents mnuEditWindow_SaveAs As System.Windows.Forms.ToolStripMenuItem
 End Class

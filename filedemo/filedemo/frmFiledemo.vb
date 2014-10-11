@@ -108,8 +108,91 @@ Public Class frmFiledemo
                 If Trim(gstrUserFileName) <> "" Then
                     'Read the file, convert lowercase to uppercase,
                     'and write the new file.
+                    gstrFileName = gstrUserFileName
+                    If Trim(gstrFileName) <> "" Then
+                        'Setup the code for handling the "Cancel" button on the SaveAsDialog box
+                        Dim DialogStatus As Integer
+                        Me.dlgSaveAs_File.FileName = gstrFileName
+                        DialogStatus = Me.dlgSaveAs_File.ShowDialog
+
+                        'Show the OpenFileDialog box
+                        Select Case DialogStatus
+                            Case DialogResult.Cancel
+
+                                FileOpen(1, gstrUserFileName, OpenMode.Binary)
+                                FileOpen(2, CurDir() & "\" & gstrBinaryFile, OpenMode.Binary)
+                                For lngI = 1 To LOF(1)
+                                    'Get a single character from the input file
+                                    'If it's a lower case letter,
+                                    'convert it to upper case and write it to
+                                    'the output file.  Otherwise, do not change it.
+                                    FileGet(1, strChar)
+                                    If Asc(strChar) > 96 And Asc(strChar) < 123 Then
+                                        strChar = Chr(Asc(strChar) - 32)
+                                    End If
+                                    FilePut(2, strChar)
+                                    lngCharCount = lngCharCount + 1
+                                Next lngI
+                                FileClose(1)
+                                FileClose(2)
+                                'Display the number of characters converted
+                                strMsg = Str(lngCharCount) & " characters transferred."
+                                MsgBox(strMsg, 0, "Binary Access Demo")
+                                '
+                                'Dispose the window
+                                '
+                                Me.Dispose()
+                            Case DialogResult.OK
+                                'Check the filename specified in the dialogbox
+                                strTemp = Me.dlgSaveAs_File.FileName
+                                If Trim(strTemp) <> Trim(gstrFileName) Then
+                                    gstrFileName = Me.dlgSaveAs_File.FileName
+
+                                End If
+                                'Set the filename selected from the dialogbox
+                                gstrFileName = Me.dlgSaveAs_File.FileName
+
+                                FileOpen(1, gstrUserFileName, OpenMode.Binary)
+                                FileOpen(2, gstrFileName, OpenMode.Binary)
+                                For lngI = 1 To LOF(1)
+                                    'Get a single character from the input file
+                                    'If it's a lower case letter,
+                                    'convert it to upper case and write it to
+                                    'the output file.  Otherwise, do not change it.
+                                    FileGet(1, strChar)
+                                    If Asc(strChar) > 96 And Asc(strChar) < 123 Then
+                                        strChar = Chr(Asc(strChar) - 32)
+                                    End If
+                                    FilePut(2, strChar)
+                                    lngCharCount = lngCharCount + 1
+                                Next lngI
+                                FileClose(1)
+                                FileClose(2)
+                                'Display the number of characters converted
+                                strMsg = Str(lngCharCount) & " characters transferred."
+                                MsgBox(strMsg, 0, "Binary Access Demo")
+
+                                '
+                                'Dispose the window
+                                '
+                                Me.Dispose()
+                            Case Else
+
+                                'Return message if there is some sort of other error in the dialogbox
+                                strTemp = ""
+                                strTemp = strTemp & DialogStatus
+                                MsgBox(strTemp, 0, "Save As... Dialog")
+                        End Select
+
+                    Else
+
+                        'No current file named to Save As...
+                        MsgBox("No current file name to Save As...", 0, "Save As...")
+
+                    End If
+
                     FileOpen(1, gstrUserFileName, OpenMode.Binary)
-                    FileOpen(2, CurDir() & "\" & gstrBinaryFile, OpenMode.Binary)
+                    FileOpen(2, gstrBinaryFile, OpenMode.Binary)
                     For lngI = 1 To LOF(1)
                         'Get a single character from the input file
                         'If it's a lower case letter,
