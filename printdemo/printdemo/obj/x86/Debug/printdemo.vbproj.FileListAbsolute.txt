@@ -1,0 +1,9 @@
+c:\users\rothgar\documents\visual studio 2010\Projects\printdemo\printdemo\bin\Debug\printdemo.exe
+c:\users\rothgar\documents\visual studio 2010\Projects\printdemo\printdemo\bin\Debug\printdemo.pdb
+c:\users\rothgar\documents\visual studio 2010\Projects\printdemo\printdemo\bin\Debug\printdemo.xml
+c:\users\rothgar\documents\visual studio 2010\Projects\printdemo\printdemo\obj\x86\Debug\printdemo.frmPrintdemo.resources
+c:\users\rothgar\documents\visual studio 2010\Projects\printdemo\printdemo\obj\x86\Debug\printdemo.Resources.resources
+c:\users\rothgar\documents\visual studio 2010\Projects\printdemo\printdemo\obj\x86\Debug\printdemo.vbproj.GenerateResource.Cache
+c:\users\rothgar\documents\visual studio 2010\Projects\printdemo\printdemo\obj\x86\Debug\printdemo.exe
+c:\users\rothgar\documents\visual studio 2010\Projects\printdemo\printdemo\obj\x86\Debug\printdemo.xml
+c:\users\rothgar\documents\visual studio 2010\Projects\printdemo\printdemo\obj\x86\Debug\printdemo.pdb
