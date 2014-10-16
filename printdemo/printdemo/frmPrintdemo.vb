@@ -165,4 +165,7 @@ Public Class frmPrintdemo
         End If
     End Sub
 
+    Private Sub btnPrintpreview_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnPrintpreview.Click
+
+    End Sub
 End Class
