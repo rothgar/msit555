@@ -33,7 +33,7 @@ Partial Class frmPrintdemo
         '
         'btnPrinttext
         '
-        Me.btnPrinttext.Location = New System.Drawing.Point(164, 312)
+        Me.btnPrinttext.Location = New System.Drawing.Point(93, 312)
         Me.btnPrinttext.Name = "btnPrinttext"
         Me.btnPrinttext.Size = New System.Drawing.Size(162, 28)
         Me.btnPrinttext.TabIndex = 1
@@ -42,7 +42,7 @@ Partial Class frmPrintdemo
         '
         'btnExit
         '
-        Me.btnExit.Location = New System.Drawing.Point(410, 315)
+        Me.btnExit.Location = New System.Drawing.Point(323, 315)
         Me.btnExit.Name = "btnExit"
         Me.btnExit.Size = New System.Drawing.Size(75, 23)
         Me.btnExit.TabIndex = 2
@@ -71,6 +71,9 @@ Partial Class frmPrintdemo
         'dlgPrint
         '
         Me.dlgPrint.UseEXDialog = True
+        '
+        'docPrint
+        '
         '
         'frmPrintdemo
         '

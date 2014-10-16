@@ -18,6 +18,8 @@ Public Class frmPrintdemo
         '
         'Terminate the program
         '
+        Application.Exit()
+
     End Sub
 
     Private Sub btnPrinttext_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles btnPrinttext.Click
