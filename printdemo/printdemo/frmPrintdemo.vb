@@ -166,31 +166,51 @@ Public Class frmPrintdemo
     End Sub
 
     Private Sub btnPrintpreview_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnPrintpreview.Click
+        '
+        'This procedure prints the contents of a text box
+        'outlined by a rectancgle that delimits the page's
+        'printable area.
+        '
+        'Local declarations
+        '
         Dim intCopies As Integer
         Dim intI As Integer
-        Dim txtToPrint As New Printing.PrintDocument = 
         Try
             '
             'Check if there is any text in the text box to print
             '
             If Trim(Me.txtPrinttext.Text) <> "" Then
                 '
+                'Set properties of the print dialog
+                '
+                Me.dlgPrint.AllowPrintToFile = False
+                Me.dlgPrint.AllowSelection = False
+                Me.dlgPrint.AllowSomePages = False
+                Me.dlgPrint.PrinterSettings = New System.Drawing.Printing.PrinterSettings
+                '
                 'Set the page properties
                 '
                 Me.dlgPageSetup.PageSettings = Me.docPrint.DefaultPageSettings
-                Me.dlgPrintPreview.WindowState = FormWindowState.Maximized
-
-                If Me.dlgPrintPreview.ShowDialog() = Windows.Forms.DialogResult.OK Then
-
+                If Me.dlgPageSetup.ShowDialog() = Windows.Forms.DialogResult.OK Then
                     Me.docPrint.DefaultPageSettings = Me.dlgPageSetup.PageSettings
                     '
+                    Me.dlgPrintPreview.Document = Me.docPrint
+                    Me.dlgPrintPreview.ShowDialog()
+
                     'Set the print document property
                     '
-                    Me.dlgPrintPreview.Document = txtToPrint
+                    'Me.dlgPrint.Document = Me.docPrint
                     '
                     'Print the page(s)?
                     '
+                    If Me.dlgPrintPreview.ShowDialog = Windows.Forms.DialogResult.Abort Then
+                        Me.dlgPrintPreview.Close()
+                    End If
                     If Me.dlgPrintPreview.ShowDialog = Windows.Forms.DialogResult.OK Then
+                        '
+                        'Get the number of copies to print
+                        '
+                        intCopies = Me.dlgPrint.PrinterSettings.Copies
                         '
                         'Print the page(s)
                         '
@@ -198,6 +218,7 @@ Public Class frmPrintdemo
                             Me.docPrint.Print()
                         Next intI
                     End If
+
                 End If
             Else
                 MsgBox("Nothing to print", MsgBoxStyle.OkOnly, "Print the Text Box")
