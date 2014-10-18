@@ -166,6 +166,44 @@ Public Class frmPrintdemo
     End Sub
 
     Private Sub btnPrintpreview_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnPrintpreview.Click
+        Dim intCopies As Integer
+        Dim intI As Integer
+        Dim txtToPrint As New Printing.PrintDocument = 
+        Try
+            '
+            'Check if there is any text in the text box to print
+            '
+            If Trim(Me.txtPrinttext.Text) <> "" Then
+                '
+                'Set the page properties
+                '
+                Me.dlgPageSetup.PageSettings = Me.docPrint.DefaultPageSettings
+                Me.dlgPrintPreview.WindowState = FormWindowState.Maximized
 
+                If Me.dlgPrintPreview.ShowDialog() = Windows.Forms.DialogResult.OK Then
+
+                    Me.docPrint.DefaultPageSettings = Me.dlgPageSetup.PageSettings
+                    '
+                    'Set the print document property
+                    '
+                    Me.dlgPrintPreview.Document = txtToPrint
+                    '
+                    'Print the page(s)?
+                    '
+                    If Me.dlgPrintPreview.ShowDialog = Windows.Forms.DialogResult.OK Then
+                        '
+                        'Print the page(s)
+                        '
+                        For intI = 1 To intCopies
+                            Me.docPrint.Print()
+                        Next intI
+                    End If
+                End If
+            Else
+                MsgBox("Nothing to print", MsgBoxStyle.OkOnly, "Print the Text Box")
+            End If
+        Catch ex As Exception
+            MsgBox(ex.ToString, MsgBoxStyle.OkOnly, "Error...")
+        End Try
     End Sub
 End Class
