@@ -22,6 +22,7 @@ Partial Class frmPrintdemo
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmPrintdemo))
         Me.btnPrinttext = New System.Windows.Forms.Button()
         Me.btnExit = New System.Windows.Forms.Button()
         Me.lblPrinttext = New System.Windows.Forms.Label()
@@ -29,11 +30,13 @@ Partial Class frmPrintdemo
         Me.dlgPageSetup = New System.Windows.Forms.PageSetupDialog()
         Me.dlgPrint = New System.Windows.Forms.PrintDialog()
         Me.docPrint = New System.Drawing.Printing.PrintDocument()
+        Me.dlgPrintPreview = New System.Windows.Forms.PrintPreviewDialog()
+        Me.btnPrintpreview = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'btnPrinttext
         '
-        Me.btnPrinttext.Location = New System.Drawing.Point(93, 312)
+        Me.btnPrinttext.Location = New System.Drawing.Point(35, 312)
         Me.btnPrinttext.Name = "btnPrinttext"
         Me.btnPrinttext.Size = New System.Drawing.Size(162, 28)
         Me.btnPrinttext.TabIndex = 1
@@ -42,7 +45,7 @@ Partial Class frmPrintdemo
         '
         'btnExit
         '
-        Me.btnExit.Location = New System.Drawing.Point(323, 315)
+        Me.btnExit.Location = New System.Drawing.Point(424, 315)
         Me.btnExit.Name = "btnExit"
         Me.btnExit.Size = New System.Drawing.Size(75, 23)
         Me.btnExit.TabIndex = 2
@@ -75,11 +78,31 @@ Partial Class frmPrintdemo
         'docPrint
         '
         '
+        'dlgPrintPreview
+        '
+        Me.dlgPrintPreview.AutoScrollMargin = New System.Drawing.Size(0, 0)
+        Me.dlgPrintPreview.AutoScrollMinSize = New System.Drawing.Size(0, 0)
+        Me.dlgPrintPreview.ClientSize = New System.Drawing.Size(400, 300)
+        Me.dlgPrintPreview.Enabled = True
+        Me.dlgPrintPreview.Icon = CType(resources.GetObject("dlgPrintPreview.Icon"), System.Drawing.Icon)
+        Me.dlgPrintPreview.Name = "dlgPrintPreview"
+        Me.dlgPrintPreview.Visible = False
+        '
+        'btnPrintpreview
+        '
+        Me.btnPrintpreview.Location = New System.Drawing.Point(265, 315)
+        Me.btnPrintpreview.Name = "btnPrintpreview"
+        Me.btnPrintpreview.Size = New System.Drawing.Size(104, 23)
+        Me.btnPrintpreview.TabIndex = 4
+        Me.btnPrintpreview.Text = "Print Preview"
+        Me.btnPrintpreview.UseVisualStyleBackColor = True
+        '
         'frmPrintdemo
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(533, 352)
+        Me.Controls.Add(Me.btnPrintpreview)
         Me.Controls.Add(Me.txtPrinttext)
         Me.Controls.Add(Me.lblPrinttext)
         Me.Controls.Add(Me.btnExit)
@@ -97,5 +120,7 @@ Partial Class frmPrintdemo
     Friend WithEvents dlgPageSetup As System.Windows.Forms.PageSetupDialog
     Friend WithEvents dlgPrint As System.Windows.Forms.PrintDialog
     Friend WithEvents docPrint As System.Drawing.Printing.PrintDocument
+    Friend WithEvents dlgPrintPreview As System.Windows.Forms.PrintPreviewDialog
+    Friend WithEvents btnPrintpreview As System.Windows.Forms.Button
 
 End Class
