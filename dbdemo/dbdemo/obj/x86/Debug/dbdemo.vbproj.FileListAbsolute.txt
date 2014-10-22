@@ -1,0 +1,10 @@
+c:\users\rothgar\documents\visual studio 2010\Projects\dbdemo\dbdemo\bin\Debug\dbdemo.exe.config
+c:\users\rothgar\documents\visual studio 2010\Projects\dbdemo\dbdemo\bin\Debug\dbdemo.exe
+c:\users\rothgar\documents\visual studio 2010\Projects\dbdemo\dbdemo\bin\Debug\dbdemo.pdb
+c:\users\rothgar\documents\visual studio 2010\Projects\dbdemo\dbdemo\bin\Debug\dbdemo.xml
+c:\users\rothgar\documents\visual studio 2010\Projects\dbdemo\dbdemo\obj\x86\Debug\dbdemo.frmDbdemo.resources
+c:\users\rothgar\documents\visual studio 2010\Projects\dbdemo\dbdemo\obj\x86\Debug\dbdemo.Resources.resources
+c:\users\rothgar\documents\visual studio 2010\Projects\dbdemo\dbdemo\obj\x86\Debug\dbdemo.vbproj.GenerateResource.Cache
+c:\users\rothgar\documents\visual studio 2010\Projects\dbdemo\dbdemo\obj\x86\Debug\dbdemo.exe
+c:\users\rothgar\documents\visual studio 2010\Projects\dbdemo\dbdemo\obj\x86\Debug\dbdemo.xml
+c:\users\rothgar\documents\visual studio 2010\Projects\dbdemo\dbdemo\obj\x86\Debug\dbdemo.pdb
