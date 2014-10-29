@@ -1,0 +1,9 @@
+c:\users\rothgar\documents\visual studio 2010\Projects\graphics\graphics\bin\Debug\graphics.exe
+c:\users\rothgar\documents\visual studio 2010\Projects\graphics\graphics\bin\Debug\graphics.pdb
+c:\users\rothgar\documents\visual studio 2010\Projects\graphics\graphics\bin\Debug\graphics.xml
+c:\users\rothgar\documents\visual studio 2010\Projects\graphics\graphics\obj\x86\Debug\graphics.frmGraphics.resources
+c:\users\rothgar\documents\visual studio 2010\Projects\graphics\graphics\obj\x86\Debug\graphics.Resources.resources
+c:\users\rothgar\documents\visual studio 2010\Projects\graphics\graphics\obj\x86\Debug\graphics.vbproj.GenerateResource.Cache
+c:\users\rothgar\documents\visual studio 2010\Projects\graphics\graphics\obj\x86\Debug\graphics.exe
+c:\users\rothgar\documents\visual studio 2010\Projects\graphics\graphics\obj\x86\Debug\graphics.xml
+c:\users\rothgar\documents\visual studio 2010\Projects\graphics\graphics\obj\x86\Debug\graphics.pdb
