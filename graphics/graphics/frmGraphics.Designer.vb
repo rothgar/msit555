@@ -101,18 +101,22 @@ Partial Class frmGraphics
         'boxButterfly1
         '
         Me.boxButterfly1.Image = Global.graphics.My.Resources.Resources.BFLY1
-        Me.boxButterfly1.Location = New System.Drawing.Point(128, 156)
+        Me.boxButterfly1.Location = New System.Drawing.Point(10, 253)
         Me.boxButterfly1.Name = "boxButterfly1"
         Me.boxButterfly1.Size = New System.Drawing.Size(77, 77)
         Me.boxButterfly1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
         Me.boxButterfly1.TabIndex = 7
         Me.boxButterfly1.TabStop = False
         '
+        'tmrButterfly
+        '
+        Me.tmrButterfly.Enabled = True
+        '
         'frmGraphics
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(586, 342)
+        Me.ClientSize = New System.Drawing.Size(571, 342)
         Me.Controls.Add(Me.boxButterfly1)
         Me.Controls.Add(Me.btnStop)
         Me.Controls.Add(Me.btnStart)
@@ -136,6 +140,6 @@ Partial Class frmGraphics
     Friend WithEvents btnStart As System.Windows.Forms.Button
     Friend WithEvents btnStop As System.Windows.Forms.Button
     Friend WithEvents boxButterfly1 As System.Windows.Forms.PictureBox
-    Friend WithEvents tmrButterfly As System.Windows.Forms.Timer
+    Public WithEvents tmrButterfly As System.Windows.Forms.Timer
 
 End Class

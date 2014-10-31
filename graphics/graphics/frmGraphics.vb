@@ -258,15 +258,28 @@ Public Class frmGraphics
 
     End Sub
 
-    Dim imageCounter As Integer = 1
+    Dim imageCounter As Integer
     Dim imageString As String
+    Dim imageDirection As Integer = 1
 
     Private Sub tmrButterfly_Tick(ByVal sender As Object, ByVal e As System.EventArgs) Handles tmrButterfly.Tick
 
         imageCounter = imageCounter Mod 2
         imageString = "BFLY" & imageCounter & ".BMP"
         boxButterfly1.Image = Image.FromFile(".\" & imageString)
-        'MsgBox(imageString)
-        imageCounter = +1
+        System.Diagnostics.Debug.WriteLine(imageString)
+        imageCounter = imageCounter + 1
+
+        If imageDirection = 1 Then
+            boxButterfly1.Left += 10
+        Else
+            boxButterfly1.Left -= 10
+        End If
+
+        If boxButterfly1.Left = 500 Then
+            imageDirection = 0
+        ElseIf boxButterfly1.Left = 0 Then
+            imageDirection = 1
+        End If
     End Sub
 End Class
