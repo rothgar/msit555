@@ -22,11 +22,17 @@ Partial Class frmGraphics
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Me.btnBoxes = New System.Windows.Forms.Button()
         Me.btnLines = New System.Windows.Forms.Button()
         Me.btnCircles = New System.Windows.Forms.Button()
         Me.btnClear = New System.Windows.Forms.Button()
         Me.btnExit = New System.Windows.Forms.Button()
+        Me.btnStart = New System.Windows.Forms.Button()
+        Me.btnStop = New System.Windows.Forms.Button()
+        Me.boxButterfly1 = New System.Windows.Forms.PictureBox()
+        Me.tmrButterfly = New System.Windows.Forms.Timer(Me.components)
+        CType(Me.boxButterfly1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'btnBoxes
@@ -74,11 +80,42 @@ Partial Class frmGraphics
         Me.btnExit.Text = "E&xit"
         Me.btnExit.UseVisualStyleBackColor = True
         '
+        'btnStart
+        '
+        Me.btnStart.Location = New System.Drawing.Point(128, 41)
+        Me.btnStart.Name = "btnStart"
+        Me.btnStart.Size = New System.Drawing.Size(114, 23)
+        Me.btnStart.TabIndex = 5
+        Me.btnStart.Text = "Start Animation"
+        Me.btnStart.UseVisualStyleBackColor = True
+        '
+        'btnStop
+        '
+        Me.btnStop.Location = New System.Drawing.Point(128, 86)
+        Me.btnStop.Name = "btnStop"
+        Me.btnStop.Size = New System.Drawing.Size(114, 23)
+        Me.btnStop.TabIndex = 6
+        Me.btnStop.Text = "Stop Animation"
+        Me.btnStop.UseVisualStyleBackColor = True
+        '
+        'boxButterfly1
+        '
+        Me.boxButterfly1.Image = Global.graphics.My.Resources.Resources.BFLY1
+        Me.boxButterfly1.Location = New System.Drawing.Point(128, 156)
+        Me.boxButterfly1.Name = "boxButterfly1"
+        Me.boxButterfly1.Size = New System.Drawing.Size(77, 77)
+        Me.boxButterfly1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
+        Me.boxButterfly1.TabIndex = 7
+        Me.boxButterfly1.TabStop = False
+        '
         'frmGraphics
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(284, 262)
+        Me.ClientSize = New System.Drawing.Size(586, 342)
+        Me.Controls.Add(Me.boxButterfly1)
+        Me.Controls.Add(Me.btnStop)
+        Me.Controls.Add(Me.btnStart)
         Me.Controls.Add(Me.btnExit)
         Me.Controls.Add(Me.btnClear)
         Me.Controls.Add(Me.btnCircles)
@@ -86,7 +123,9 @@ Partial Class frmGraphics
         Me.Controls.Add(Me.btnBoxes)
         Me.Name = "frmGraphics"
         Me.Text = "Graphics Demonstration"
+        CType(Me.boxButterfly1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
     Friend WithEvents btnBoxes As System.Windows.Forms.Button
@@ -94,5 +133,9 @@ Partial Class frmGraphics
     Friend WithEvents btnCircles As System.Windows.Forms.Button
     Friend WithEvents btnClear As System.Windows.Forms.Button
     Friend WithEvents btnExit As System.Windows.Forms.Button
+    Friend WithEvents btnStart As System.Windows.Forms.Button
+    Friend WithEvents btnStop As System.Windows.Forms.Button
+    Friend WithEvents boxButterfly1 As System.Windows.Forms.PictureBox
+    Friend WithEvents tmrButterfly As System.Windows.Forms.Timer
 
 End Class

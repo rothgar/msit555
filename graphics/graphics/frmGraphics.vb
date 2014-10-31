@@ -10,6 +10,7 @@
 
 Option Explicit On
 
+
 Public Class frmGraphics
 
     Private Sub btnBoxes_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles btnBoxes.Click
@@ -238,5 +239,34 @@ Public Class frmGraphics
         Me.btnClear.Visible = True
         Me.btnExit.Visible = True
         objGraphics.Dispose()
+    End Sub
+
+    Private Sub btnStart_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnStart.Click
+        boxButterfly1.Show()
+
+    End Sub
+
+    Private Sub btnStop_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnStop.Click
+        boxButterfly1.Hide()
+
+    End Sub
+
+    Private Sub frmGraphics_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
+        ' Hide the picture on startup
+        boxButterfly1.Hide()
+        Me.tmrButterfly.Start()
+
+    End Sub
+
+    Dim imageCounter As Integer = 1
+    Dim imageString As String
+
+    Private Sub tmrButterfly_Tick(ByVal sender As Object, ByVal e As System.EventArgs) Handles tmrButterfly.Tick
+
+        imageCounter = imageCounter Mod 2
+        imageString = "BFLY" & imageCounter & ".BMP"
+        boxButterfly1.Image = Image.FromFile(".\" & imageString)
+        'MsgBox(imageString)
+        imageCounter = +1
     End Sub
 End Class
